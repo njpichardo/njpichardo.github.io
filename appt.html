@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Appointment</title>
+</head>
+<body>
+    <h1>Book Your Appointment</h1>
+
+    <label for="customerName">Your Name:</label>
+    <input type="text" id="customerName" placeholder="Enter your name">
+    <br>
+
+    <label for="stylist">Preferred Stylist:</label>
+    <select id="stylist">
+        <option value="John">Henry</option>
+        <option value="Sara">Alberto</option>
+        <option value="Mike">Nelson</option>
+    </select>
+    <br>
+
+    <label for="appointmentDate">Choose an Appointment Date:</label>
+    <input type="date" id="appointmentDate">
+    <br>
+
+    <label for="service">Select a Service:</label>
+    <select id="service">
+        <option value="Haircut">Haircut</option>
+        <option value="Shave">Shave</option>
+        <option value="Haircut + Shave">Haircut + Shave</option>
+    </select>
+    <br>
+
+    <button onclick="saveAppointment()">Save Appointment</button>
+
+    <h2>Your Saved Appointment:</h2>
+    <p id="savedAppointment"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
